@@ -1,13 +1,53 @@
 .footer__container {
-    display: flex;
-    justify-content: space-between;
 
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (min-width: 480px) {
+        display: block;
+
+        
+    
 }
+
+    @media screen and (min-width: 1200px) {
+    
+    display: flex;
+         }
+
+
+
+    
+    
+
+    }
+.footer__logo{
+    @media screen and (min-width: 480px) {
+        display: block;
+       
+        align-items: center;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+     @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+}
+.footer__link{
+
+ 
+}   
+.footer__subscription{
+    @media screen and (min-width: 480px) {
+            display: block;
+
+        }
+    }
+
 
 .footer__webstudio {
     display: block;
@@ -86,6 +126,10 @@
 
 
 .footer__adress {
+    @media screen and (min-width: 480px) {
+            display: flex;
+            flex-direction: column;
+        }
     display: flex;
 }
 
@@ -94,6 +138,25 @@
 }
 
 .footer-link__title-link {
+
+    @media screen and (min-width: 480px) {
+    
+    display: block;
+    margin-bottom: 20px;
+
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+        }
+
+    @media screen and (min-width: 1200px) {
+    
     display: inline-block;
 
     margin-bottom: 20px;
@@ -106,11 +169,21 @@
     text-transform: uppercase;
 
     color: #ffffff;
+         }
+    
 }
 
 .list-link {
-    display: flex;
 
+    @media screen and (min-width: 480px) {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+    
     &__border:hover {
             background-color: $accent-color;
         }
@@ -136,6 +209,21 @@
 
 
 .footer-link {
-    margin-left: 70px;
-    width: 206px;
+
+    @media screen and (min-width: 480px) {
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+           align-items: center;
+            
+            
+        }
+
+          @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+                width: 206px;
+            
+            
+        }
+    
 }
