@@ -1,0 +1,141 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__webstudio {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+
+    font-style: normal;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $hero-color;
+
+    &__adress-town:hover,
+    &__adress-town:focus,
+    &__adress-tel:hover,
+    &__adress-tel:focus,
+    &__adress-mail:hover,
+    &__adress-mail:focus {
+    color: $accent-color;
+        }
+}
+
+.footer__adress-town {
+    display: block;
+
+    color: $button-text-color;
+
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+    font-family: inherit;
+
+    margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__adress-tel {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+    font-family: inherit;
+
+    margin-bottom: 9px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__adress-mail {
+    display: block;
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+    font-family: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer__adress {
+    display: flex;
+}
+
+.adress-footer {
+    display: block;
+}
+
+.footer-link__title-link {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.list-link {
+    display: flex;
+
+    &__border:hover {
+            background-color: $accent-color;
+        }
+}
+
+.list-link__border--color {
+    margin: 12px;
+    fill: $button-text-color;
+}
+
+.list-link__border {
+    display: block;
+
+    width: 44px;
+    height: 44px;
+
+    margin-right: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-link {
+    margin-left: 70px;
+    width: 206px;
+}

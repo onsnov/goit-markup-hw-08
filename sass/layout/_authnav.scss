@@ -1,0 +1,48 @@
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+
+&__link:hover,
+&__link:focus {
+    color: $accent-color;
+}
+
+&__icon-mail:hover {
+    fill: $accent-color;
+}
+&__icon-tel:hover {
+    fill: $accent-color;
+}
+}
+
+.auth-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.auth-nav__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary-text-color;
+}
+
+.auth-nav__icon-mail {
+    fill: #757575;
+    margin-right: 10px;
+    text-emphasis: none;
+}
+
+
+
+.auth-nav__icon-tel {
+    fill: #757575;
+    margin-right: 10px;
+}
+
+.auth-nav__link:hover .auth-nav__icon-mail {
+    fill: $accent-color;
+}
+
+.auth-nav__link:hover .auth-nav__icon-tel {
+    fill: $accent-color;
+}

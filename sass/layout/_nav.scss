@@ -1,0 +1,49 @@
+.header-title {
+    background-color: $button-text-color;
+    border: 1px solid #ececec;
+}
+
+.header-title__container {
+    border-width: 0 0 1px 0;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-studio__link-webstudio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.nav-studio__logo-web {
+    color: $accent-color;
+
+    font-weight: 700;
+}
+
+.nav-studio__logo-studio {
+    color: #000000;
+
+    font-weight: 700;
+}
+
+.nav-studio__logo-studiow {
+    color: $button-text-color;
+}
+
+.nav-studio,
+.nav-portfolio {
+    display: flex;
+    align-items: center;
+}

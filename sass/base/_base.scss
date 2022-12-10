@@ -1,0 +1,81 @@
+$container-breakpoint: (
+    phone: 480px;
+    tablet: 768px;
+    desktop: 1200px;
+);
+
+body {
+    color: $primary-text-color;
+    font-family: "Roboto", sans-serif;
+    background-color: $button-text-color;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // tablet screen 768px & >
+    @media screen and (min-width: 768px)    
+    {max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+
+    // tablet screen 1200px & >
+    @media screen and (min-width: 1200px)    
+    {max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+
+
+}
+
+.section {
+    padding: 94px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+* {
+    padding: 0;
+}
+
+
+.link {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
