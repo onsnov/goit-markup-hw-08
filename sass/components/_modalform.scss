@@ -210,14 +210,15 @@
 
 .subscription__object {
     @media screen and (min-width: 480px) {
-        display: block;
+    display: block;
     }
 
     @media screen and (min-width: 1200px) {
-        display: inline-flex;
-            flex-direction: column;
-            margin-left: 93px;
-            width: 358px;
+    display: inline-flex;
+     flex-direction: column;
+     margin-left: 92px;
+     width: 358px;
+     align-items: flex-start;
     }
    
 }
@@ -225,11 +226,11 @@
 .subscription__label {
 
     @media screen and (min-width: 480px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        margin-bottom: 20px;
+    margin-bottom: 20px;
 
     font-family: inherit;
     font-weight: 700;
@@ -242,7 +243,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-          font-family: inherit;
+    font-family: inherit;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
@@ -251,11 +252,10 @@
     text-transform: uppercase;
     color: $button-text-color;
     margin-bottom: 20px;
+    align-items: flex-start;
     
 }
 
-
-  
 }
 
 .subscription__input::placeholder {
@@ -273,9 +273,17 @@
         margin-bottom: 20px;
         
     }
+    @media screen and (min-width: 768px) {
+    
+     color: rgba(255, 255, 255, 0.6);
+     width: 450px;
+     margin-bottom: 20px;
+    
+        }
 
         @media screen and (min-width: 1200px) {
-            color: rgba(255, 255, 255, 0.6);
+            width: 358px;
+        color: rgba(255, 255, 255, 0.6);
         }
 
     
