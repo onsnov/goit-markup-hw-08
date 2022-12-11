@@ -1,7 +1,7 @@
 .footer__container {
 
     @media screen and (min-width: 480px) {
-        display: block;
+    display: block;
 
          
 }
@@ -25,7 +25,7 @@
     @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column ;
-  width: 232px;
+    width: 232px;
     align-items: center;
     margin-bottom: 60px;
     text-align: center;
@@ -34,6 +34,7 @@
     @media screen and (min-width: 1200px) {
     display: block;
     text-align: left;
+    margin-bottom: 0;
     
 }
 
@@ -41,7 +42,7 @@
 
 .footer__subscription{
     @media screen and (min-width: 480px) {
-        display: block;
+    display: flex;
 
         }
 
@@ -50,11 +51,10 @@
 
         }
      @media screen and (min-width: 1200px) {
-         display: flex;
-         align-items: flex-end;
+    display: block;
+    align-items: flex-end;
 
         }
-
 
     }
 
@@ -147,21 +147,19 @@
     align-items: flex-start;
     justify-content: center;
 
-
-        }
+    }
 
     @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row ;
     justify-content: center;
     align-items: flex-start;
-        
-
-}
+     
+    }
 
 .adress-footer {
     display: block;
-}
+    }
 
 .footer-link__title-link {
 
@@ -206,12 +204,10 @@
     display: flex;
     margin-bottom: 60px;
     }
-
-   
         
 
     @media screen and (min-width: 1200px) {
-        display: flex;
+    display: flex;
 
         
     }
@@ -239,6 +235,41 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer__formtext {
+
+    @media screen and (min-width: 480px) {
+
+    margin-bottom: 20px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $button-text-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+    font-family: inherit;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $button-text-color;
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-left: 0;
+       
+    }
+
+}
 .footer-link {
 
     @media screen and (min-width: 480px) {

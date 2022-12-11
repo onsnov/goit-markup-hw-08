@@ -1,7 +1,32 @@
 .auth-nav {
-    display: flex;
-    margin-left: auto;
 
+    @media screen and (min-width: 480px) {
+    display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+        }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+&__phone {
+
+    @media screen and (min-width: 768px) {
+    display: none;}
+
+    @media screen and (min-width: 1200px) {
+    display: none;
+    }
+
+
+}
+    
 &__link:hover,
 &__link:focus {
     color: $accent-color;
@@ -16,7 +41,14 @@
 }
 
 .auth-nav__item:not(:last-child) {
-    margin-right: 50px;
+    
+
+    @media screen and (min-width: 768px) {
+    margin-right: 0;
+}
+
+    @media screen and (min-width: 1200px) {
+    margin-right: 50px;}
 }
 
 .auth-nav__link {

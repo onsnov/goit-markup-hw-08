@@ -1,5 +1,20 @@
 .site-nav {
+
+    @media screen and (min-width: 480px) {
+    display: none;
+    }
+
+    @media screen and (min-width: 768px) {
     display: flex;
+    margin-right: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+
+    margin-right: 315px;
+    }
+    
 
 &__link:hover,
 &__link:focus {
@@ -7,16 +22,33 @@
 }
 
 &__current::after {
-    content: "";
+
+@media screen and (min-width: 768px) {
+        content: "";
     position: absolute;
-    top: 78px;
+    top: 61px;
     left: 1px;
 
     width: 100%;
     height: 4px;
 
     background-color: $accent-color;
-    border-radius: 2px;
+    border-radius: 2px;;
+    }
+
+ @media screen and (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    top: 78px;
+    left: 1px;
+    
+    width: 100%;
+     height: 4px;
+    
+        background-color: $accent-color;
+        border-radius: 2px;
+ }
+  
 }
 }
 
@@ -25,8 +57,16 @@
 }
 
 .site-nav__link {
+    @media screen and (min-width: 768px) {
+    padding-top: 24px;
+        padding-bottom: 24px;
+        }
+
+    @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
+    }
+    
 }
 
 .site-nav__link,
