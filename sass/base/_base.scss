@@ -15,6 +15,10 @@
     
 }
 
+img{
+    display: block;
+}
+
 body {
     color: $primary-text-color;
     font-family: "Roboto", sans-serif;
@@ -48,12 +52,15 @@ body {
     padding-right: 15px;
     }
 
-
-
 }
 
 .section {
-    padding: 94px 0;
+    @media screen and (min-width: 480px) {padding: 60px 0;}
+    
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {padding: 94px 0;}
+    
 }
 
 h1,
