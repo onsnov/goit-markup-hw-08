@@ -1,4 +1,5 @@
 .section-hero {
+    @media screen and (max-width: 767px) {
 margin-top: 0;
 margin-left: auto;
 margin-right: auto;
@@ -9,13 +10,16 @@ text-align: center;
 max-width: 1600px;
 height: 400px;
 background-repeat: no-repeat;
-
+background-size: cover;
 background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
         url(../images/Header_img_mobile.jpg);
+    }
+
         
 @media(min-resolution:2dppx){
+
 background-image: linear-gradient(to right,
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)),
@@ -23,10 +27,12 @@ background-image: linear-gradient(to right,
 }
 
 
-@media(min-width: 489px){
+@media(min-width: 768px){
 height: 400px;
 padding-top: 118px;
 padding-bottom: 118px;
+background-position: center;
+background-size: cover;
 background-image: linear-gradient(to right,
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)),
@@ -40,11 +46,12 @@ background-image: linear-gradient(to right,
         }
 }
 
-@media(min-width: 769px) {
+@media(min-width: 1200px) {
 height: 600px;
 
 padding-top: 200px;
 padding-bottom: 200px;
+background-size: cover;   
 background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -61,7 +68,7 @@ background-image: linear-gradient(to right,
 }
 
 .section-hero__hero-title {
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     margin-bottom: 30px;
 
     color: $button-text-color;
@@ -74,7 +81,16 @@ background-image: linear-gradient(to right,
 }
 
 @media screen and (min-width: 768px) {
+    
+    margin-bottom: 30px;
+
+    color: $button-text-color;
     line-height: calc(42 / 26);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -87,6 +103,7 @@ background-image: linear-gradient(to right,
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-align: center;
+    
 }
     
 }

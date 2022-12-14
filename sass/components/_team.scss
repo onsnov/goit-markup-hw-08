@@ -1,22 +1,37 @@
 .section.color {
-@media screen and (min-width: 480px) {background-color: #f5f4fa;
+@media screen and (max-width: 767px) {background-color: #f5f4fa;
+    margin-right: auto;
+    margin-left: auto;
     width: 480px;}
 
 @media screen and (min-width: 768px) {background-color: #f5f4fa;
     width: 768px;}
 
 @media screen and (min-width: 1200px) {background-color: #f5f4fa;
+    margin-right: auto;
+    margin-left: auto;
     width: 1200px;}
     
 }
 
 .team-main-title {
 
-@media screen and (min-width: 480px) {margin-bottom: 30px;}
+@media screen and (max-width: 767px) {
+    margin-bottom: 28px;
+text-align: center;
+font-size: 28px;}
     
-@media screen and (min-width: 768px) {margin-bottom: 30px;}
+@media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+font-size: 28px;}
     
-@media screen and (min-width: 1200px) {margin-bottom: 50px;}
+@media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+line-height: calc( 42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;}
     
 }
 
@@ -41,7 +56,7 @@ margin-bottom: 10px;
 
 .team-list {
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
 display: block;
         
     }
@@ -60,7 +75,7 @@ gap: 0;}
 }
 
 .team-list__item {
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     
 margin-bottom: 30px;
 width: 450px;
@@ -89,7 +104,7 @@ background-color: #fff;
 }
 
 .team-list__item:not(:last-child) {
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     
 }
 

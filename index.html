@@ -35,10 +35,80 @@
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
-          <svg class="auth-nav__phone" width="40" height="40" >
-            <use href="./images/symbol-defs (1).svg#menu_phone">
+
+
+
+
+          <button type="button" class="menu-button is-open" 
+          aria-expanded="false"
+          data-menu-button>
+            <svg class="auth-nav__phone" 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню" >
+            <use class="menu-button__icon-menu" href="./images/symbol-defs (1).svg#menu_phone">
+            </use>
+            <use class="menu-button__icon-close" href="./images/symbol-defs (1).svg#close_menu_phone">
             </use>
           </svg>
+          </button> 
+          <div class="menu-mobile is-open" data-menu>
+            <div class="menu-mobile__navigation">
+              <ul class="site-nav-mobile">
+            <li class="site-nav-mobile__item"><a href="" class="site-nav__current site-nav__link">Студія</a></li>
+            <li class="site-nav-mobile__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav-mobile__item"><a href="" class="site-nav__link">Контакти</a></li>
+              </ul>
+            </div>
+            <div class="menu-mobile__contacts">
+            <ul class="auth-nav-mobile">
+               <li class="auth-nav-mobile__item">
+              <a class="auth-nav-mobile__tel" href="tel:+380961111111">
+                <svg class="" width="10" height="16">
+                  <use href=""></use>
+                </svg>
+                +380961111111</a
+              >
+            </li>
+            <li class="auth-nav-mobile__item">
+              <div>
+                <a class="auth-nav-mobile__link" href="mailto:info@devstudio.com">
+                  <svg class="auth-nav-mobile__mail" width="16" height="12">
+                    <use href=""></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </div>
+            </li>
+           
+          
+            </ul>
+            </div>
+            <div class="menu-mobile__social-menu">
+
+              <ul class="menu-mobile__social-list">
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">Instagram</a></li>
+                
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">Twitter</a></li>
+                
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">Facebook</a></li>
+                
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">LinkedIn</a></li>                              
+              </ul>
+
+              
+              
+               
+              
+            </div>
+          </div> 
+          
+          
+
+
+
           <ul class="auth-nav">
             <li class="auth-nav__item">
               <div>
@@ -58,7 +128,7 @@
                 +380961111111</a
               >
             </li>
-          </ul>
+          </ul>        
         </nav>
       </div>
     </header>
@@ -142,10 +212,12 @@
             <li class="doing-list__item">
               <div class="item-wrapper">
                 <img
+                  srcset="./images/img1_doing_desktop.jpg 1x,
+                          ./images/img1_doing_desktop2x.jpg 2x"
                   class="link"
-                  src="./images/what-we-do3.jpg"
+                  src="./images/img1_doing_desktop.jpg"
                   alt="Верстка для пк"
-                  width="370"
+                  width="100%"
                 />
                 <p class="doing-list__text-link">Десктопні додатки</p>
               </div>
@@ -153,10 +225,12 @@
             <li class="doing-list__item">
               <div class="item-wrapper">
                 <img
+                   srcset="./images/img2_doing_desktop.jpg 1x,
+                         ./images/img2_doing_desktop2x.jpg 2x"
                   class="link"
                   src="./images/what-we-do4.jpg"
                   alt="Верстка для тел"
-                  width="370"
+                  width="100%"
                 />
                 <p class="doing-list__text-link ">Мобільні додатки</p>
               </div>
@@ -164,10 +238,12 @@
             <li class="doing-list__item">
               <div class="item-wrapper">
                 <img
+                  srcset="./images/img3_doing_desktop.jpg 1x,
+                         ./images/img3_doing_desktop2x.jpg 2x"
                   class="link"
                   src="./images/what-we-do5.jpg"
                   alt="Верстка для планшета"
-                  width="370"
+                  width="100%"
                 />
                 <p class="doing-list__text-link ">Дизайнерські рішення</p>
               </div>
@@ -191,7 +267,7 @@
                 class="item-img"
                 src="./images/img1_command_tel.jpg"
                 alt="developer"
-                width="100%"
+                width=100%
               />
               <div class="item-about">
                 <h3 class="title team-title">Ігор Дем'яненко</h3>
@@ -247,7 +323,7 @@
                 class="item-img"
                 src="./images/img2_command_tel.jpg"
                 alt="developer"
-                width="100%"
+                width=100%
               />
               <div class="item-about">
                 <h3 class="title team-title">Ольга Рєпіна</h3>
@@ -303,7 +379,7 @@
                 class="item-img"
                 src="./images/img3_command_tel.jpg"
                 alt="developer"
-                width="100%"
+                width=100%
               />
               <div class="item-about">
                 <h3 class="title team-title">Микола Тарасов</h3>
@@ -359,7 +435,7 @@
                 class="item-img"
                 src="./images/img4_command_tel.jpg"
                 alt="developer"
-                width="100%"
+                width=100%
               />
               <div class="item-about">
                 <h3 class="title team-title">Михайло Єрмаков</h3>
@@ -651,5 +727,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

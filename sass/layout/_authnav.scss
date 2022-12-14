@@ -1,6 +1,15 @@
+.auth-nav__phone{
+    @media screen and (max-width: 767px) {
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+
+        }
+}
 .auth-nav {
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
     display: none;
     }
 
@@ -16,6 +25,8 @@
 }
 
 &__phone {
+
+    
 
     @media screen and (min-width: 768px) {
     display: none;}

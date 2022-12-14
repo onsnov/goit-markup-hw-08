@@ -1,8 +1,11 @@
 .doing {
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     display: none;
 }
 
+@media screen and (min-width: 768px) {
+    display: none;
+}
 @media screen and (min-width: 1200px) {
     display: block;
     margin-bottom: 50px;

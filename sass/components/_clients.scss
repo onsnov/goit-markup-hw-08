@@ -9,7 +9,7 @@
 }
 
 .section.clients{
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
             padding: 60px 0;
         }
     
@@ -34,7 +34,7 @@
 
 .clients-title {
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
         margin-bottom: 30px;
         font-size: 28px;
 
@@ -58,7 +58,7 @@
 
 .clients-list {
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     display: flex;    
     justify-content: center;
     flex-wrap: wrap;
@@ -84,7 +84,7 @@
     
 &__item {
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
     flex-basis: 210px;
     height: 92px;
               }
