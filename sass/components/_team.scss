@@ -78,17 +78,17 @@ gap: 0;}
 
 .team-list__item {
     
-@media screen and (min-width: 320px) {
+// @media screen and (max-width: 320px) {
     
-margin-bottom: 30px;
-max-width: 320px;
+// margin-bottom: 30px;
+// max-width: 320px;
         
-}
+// }
 
 @media screen and (min-width: 480px) {
 
     margin-bottom: 30px;
-    max-width: 450px;
+    max-width: 480px;
 
 }
 
@@ -98,7 +98,7 @@ max-width: 354px;
     }
     
 @media screen and (min-width: 1200px) {
-width: 270px;
+max-width: 270px;
 max-height: 428px;
 border-left: 1px solid #eeeeee;
 border-right: 1px solid #eeeeee;

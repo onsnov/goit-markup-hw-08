@@ -1434,16 +1434,10 @@ ul {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .team-list__item {
-    margin-bottom: 30px;
-    max-width: 320px;
-  }
-}
 @media screen and (min-width: 480px) {
   .team-list__item {
     margin-bottom: 30px;
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1454,7 +1448,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .team-list__item {
-    width: 270px;
+    max-width: 270px;
     max-height: 428px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
