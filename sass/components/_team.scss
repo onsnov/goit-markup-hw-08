@@ -4,14 +4,15 @@
     margin-left: auto;
     width: 480px;}
     padding-top: 60px;
+    max-width: 100%;
 
 @media screen and (min-width: 768px) {background-color: #f5f4fa;
-    width: 768px;}
+    width: 100%;}
 
 @media screen and (min-width: 1200px) {background-color: #f5f4fa;
     margin-right: auto;
     margin-left: auto;
-    width: 1200px;}
+    width: 100%;}
     
 }
 
@@ -76,11 +77,19 @@ gap: 0;}
 }
 
 .team-list__item {
-@media screen and (max-width: 767px) {
+    
+@media screen and (min-width: 320px) {
     
 margin-bottom: 30px;
-width: 450px;
+max-width: 320px;
         
+}
+
+@media screen and (min-width: 480px) {
+
+    margin-bottom: 30px;
+    max-width: 450px;
+
 }
 
 @media screen and (min-width: 768px) {

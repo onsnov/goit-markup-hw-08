@@ -36,10 +36,8 @@
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
 
-
-
-
-          <button type="button" class="menu-button is-open" 
+        <!--Кнопка вкл викл моб меню -->
+          <button type="button" class="menu-button" 
           aria-expanded="false"
           data-menu-button>
             <svg class="auth-nav__phone" 
@@ -52,8 +50,22 @@
             </use>
           </svg>
           </button> 
-          <div class="menu-mobile is-open" data-menu>
+
+          <!-- Меню мобільне -->
+            <div class="menu-mobile" data-menu>
             <div class="menu-mobile__navigation">
+
+          <button type="button" class="menu-button" 
+          aria-expanded="false"
+          >
+            <svg class="auth-nav__phone" 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню" >
+            <use class="menu-button__icon-close_" href="./images/symbol-defs (1).svg#close_menu_phone">
+            </use>
+          </svg>
+          </button>
               <ul class="site-nav-mobile">
             <li class="site-nav-mobile__item"><a href="" class="site-nav__current site-nav__link">Студія</a></li>
             <li class="site-nav-mobile__item">
@@ -62,7 +74,8 @@
             <li class="site-nav-mobile__item"><a href="" class="site-nav__link">Контакти</a></li>
               </ul>
             </div>
-            <div class="menu-mobile__contacts">
+                
+             <div class="menu-mobile__contacts">
             <ul class="auth-nav-mobile">
                <li class="auth-nav-mobile__item">
               <a class="auth-nav-mobile__tel" href="tel:+380961111111">
@@ -81,8 +94,7 @@
                   info@devstudio.com</a
                 >
               </div>
-            </li>
-           
+            </li>         
           
             </ul>
             </div>
@@ -103,13 +115,14 @@
                
               
             </div>
-          </div> 
+          </div>
+         
+ 
           
-          
 
 
 
-          <ul class="auth-nav">
+         <ul class="auth-nav">
             <li class="auth-nav__item">
               <div>
                 <a class="auth-nav__link" href="mailto:info@devstudio.com">
@@ -635,6 +648,7 @@
         </addr>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="close-button">
@@ -728,5 +742,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
